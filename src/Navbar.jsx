@@ -13,9 +13,10 @@ const Navbar = () =>{
                         <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                         <div className="navbar-nav ">
                             <NavLink exact activeClassName ="menu_active"  className="nav-link" to='/'>Home</NavLink>
-                            <NavLink exact activeClassName ="menu_active"  className="nav-link" to ='/message'>Messages</NavLink>
+                            {/* <NavLink exact activeClassName ="menu_active"  className="nav-link" to ='/message'>Messages</NavLink> */}
                             <NavLink exact activeClassName ="menu_active"  className="nav-link" to ='/today-details'>Today's Details</NavLink>
                             <NavLink exact activeClassName ="menu_active"  className="nav-link" to ='/add-client'>Add Clients</NavLink>
+                            <NavLink exact activeClassName ="menu_active"  className="nav-link" to ='/log-in'>LogIn</NavLink>
                             {/* <NavLink exact activeClassName ="menu_active"  className="nav-link" >SignOut</NavLink> */}
                         </div>
                         </div>

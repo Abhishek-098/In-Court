@@ -50,7 +50,7 @@ const AddClient = () =>{
                             <textarea type="text" className="form-control" id="inputProb"/>
                         </div>
                         <div className="col-12 ">
-                            <button type="submit" className="btn btn-info my-3">Sign in</button>
+                            <button type="submit" className="btn btn-info my-3">Add and Send Notification</button>
                         </div>
                     </form>
                     </div>

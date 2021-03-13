@@ -11,8 +11,8 @@ const Home = () =>{
                     <div className = "background_img ">
                     <div className="hero-text">
                         <div className ="content">
-                            <h1>Welcome to Inlaw</h1>
-                            <h3>Let's Connect</h3>
+                            <h1>WELCOME</h1>
+                            <h3>This is In-Law</h3>
                             <br/>
                             <NavLink to ='/add-client' className ="btn btn-info">Add Clients</NavLink>
                         </div>

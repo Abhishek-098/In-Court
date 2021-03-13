@@ -1,0 +1,39 @@
+/* .box{
+    -webkit-box-shadow: 14px -14px 31px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: 14px -14px 31px -9px rgba(0,0,0,0.75);
+box-shadow: 14px -14px 31px -9px rgba(0,0,0,0.75);
+}
+.main{
+    -webkit-box-shadow: 14px -14px 31px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: 14px -14px 31px -9px rgba(0,0,0,0.75);
+box-shadow: 14px -14px 31px -9px rgba(0,0,0,0.75);
+} */
+
+.box{
+    background-color: #292b2c ;
+    border-radius: 10px;
+    
+}
+.box h2{
+    color: white;
+    
+}
+.login{
+    color: white;
+}
+#emailHelp{
+    color: whitesmoke;
+}
+.container{
+    margin-top: 7%;
+}
+
+@media only screen and (max-width: 600px) {
+   .box{
+       height: 100vh;
+       border-radius: 0px;
+   }
+   button{
+       margin-bottom: 30px;
+   }
+  }
