@@ -1,0 +1,17 @@
+.navbar{
+    background-color: black;
+    
+}
+.nav-link{
+    color:grey;
+}
+.nav-link:hover{
+    color:white;
+    
+}
+
+.menu_active{
+    border-bottom: 2px solid black;
+    font-weight: bolder;
+    color: white;
+}
