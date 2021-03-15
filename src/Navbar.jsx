@@ -6,7 +6,7 @@ import './CSS/Navbar.css';
 
 const Navbar = () =>{
     return(<>
-                <nav className="navbar navbar-expand-lg fixed-top">
+                <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                     <div className="container-fluid">
                         <NavLink className="navbar-brand" to ='/'>LOGO</NavLink>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

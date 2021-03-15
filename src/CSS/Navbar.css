@@ -1,17 +1,14 @@
-.navbar{
-    background-color: black;
-    
-}
+
 .nav-link{
-    color:grey;
+    color:white !important;
 }
 .nav-link:hover{
-    color:white;
+    color:#5bc0de !important;
     
 }
 
 .menu_active{
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #5bc0de ;
     font-weight: bolder;
     color: white;
 }

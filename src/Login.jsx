@@ -266,12 +266,12 @@ const Login = () =>{
             <section>
                 <div className = 'container'>
                     <div className ='row'>
-                        <div className = "col-md -5 box mt-5">
+                        <div className = "col-md -5 box">
                             <div className = "row mt-5 justify-content-center">
-                                <h2 className ="my-2">Already a User</h2>
+                                <h2 className ="my-2 col-md-5">Already a User</h2>
                             </div>
                             <div className ="row mt-4 justify-content-center">
-                            <form className ="mt-3" onSubmit ={signinSubmit}>
+                            <form className ="mt-3 col-md-8" onSubmit ={signinSubmit}>
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label login">Email address</label>
                                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" onChange ={inputSignin} name ="vmail" value ={sidetails.email}/>
@@ -282,7 +282,7 @@ const Login = () =>{
                                     <input type="password" class="form-control" id="exampleInputPassword1" onChange ={inputSignin} name ="pass" value ={sidetails.pass}/>
                                 </div>
                                 <div className ='row justify-content-center'>
-                                <button type="submit" class="btn btn-outline-info">LogIn</button>
+                                <button type="submit" class="btn btn-outline-info col-md-3 col-8">LogIn</button>
                                 </div>
                             </form>
                             </div>
@@ -336,7 +336,7 @@ const Login = () =>{
                                     </div>
                                     <div class="col-12 my-3">
                                         <div className="row justify-content-center">
-                                        <button type="submit" class="btn btn-outline-info">Sign Up</button>
+                                        <button type="submit" class="btn btn-outline-info col-md-4 col-8">Sign Up</button>
                                     </div>
                                     </div>
                                 </form>

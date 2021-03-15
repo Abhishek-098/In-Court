@@ -3,8 +3,7 @@ import { Route, Switch } from 'react-router';
 import Home from './Home';
 import Message from './Message';
 import Tdetails from './Tdetails';
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-// import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
+
 import Navbar from './Navbar';
 import AddClient from './AddClient';
 import Login from './Login';
