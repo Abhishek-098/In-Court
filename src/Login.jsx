@@ -272,17 +272,17 @@ const Login = () =>{
                             </div>
                             <div className ="row mt-4 justify-content-center">
                             <form className ="mt-3 col-md-8" onSubmit ={signinSubmit}>
-                                <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label login">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" onChange ={inputSignin} name ="vmail" value ={sidetails.email}/>
-                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                <div className="mb-3">
+                                    <label htmlFor="exampleInputEmail1" className="form-label login">Email address</label>
+                                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" onChange ={inputSignin} name ="vmail" value ={sidetails.email}/>
+                                    <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputPassword1" class="form-label login">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" onChange ={inputSignin} name ="pass" value ={sidetails.pass}/>
+                                <div className="mb-3">
+                                    <label htmlFor="exampleInputPassword1" className="form-label login">Password</label>
+                                    <input type="password" className="form-control" id="exampleInputPassword1" onChange ={inputSignin} name ="pass" value ={sidetails.pass}/>
                                 </div>
                                 <div className ='row justify-content-center'>
-                                <button type="submit" class="btn btn-outline-info col-md-3 col-8">LogIn</button>
+                                <button type="submit" className="btn btn-outline-info col-md-3 col-8">LogIn</button>
                                 </div>
                             </form>
                             </div>
@@ -293,50 +293,50 @@ const Login = () =>{
                                 <div className = "row my-3 justify-content-center">
                                     <h2 className ="my-2">New User</h2>
                                 </div>
-                                <form class="row g-3" onSubmit ={signupSubmit}>
-                                    <div class="col-md-6">
-                                        <label for="inputfname" class="form-label">First Name*</label>
-                                        <input type="text" class="form-control" id="inputfname" onChange ={inputSignup} name="fname" value ={sodetails.Fname}/>
+                                <form className="row g-3" onSubmit ={signupSubmit}>
+                                    <div className="col-md-6">
+                                        <label htmlFor="inputfname" className="form-label">First Name*</label>
+                                        <input type="text" className="form-control" id="inputfname" onChange ={inputSignup} name="fname" value ={sodetails.Fname}/>
                                     </div>
-                                    <div class="col-md-6">
-                                        <label for="inputLname" class="form-label">Last Name</label>
-                                        <input type="text" class="form-control" id="inputlname" onChange ={inputSignup} name="lname" value ={sodetails.Lname}/>
+                                    <div className="col-md-6">
+                                        <label htmlFor="inputLname" className="form-label">Last Name</label>
+                                        <input type="text" className="form-control" id="inputlname" onChange ={inputSignup} name="lname" value ={sodetails.Lname}/>
                                     </div>
-                                    <div class="col-md-6">
-                                        <label for="inputEmail4" class="form-label">Email*</label>
-                                        <input type="email" class="form-control" id="inputEmail4" onChange ={inputSignup} name="email" value ={sodetails.Email}/>
+                                    <div className="col-md-6">
+                                        <label htmlFor="inputEmail4" className="form-label">Email*</label>
+                                        <input type="email" className="form-control" id="inputEmail4" onChange ={inputSignup} name="email" value ={sodetails.Email}/>
                                     </div>
-                                    <div class="col-md-6">
-                                        <label for="inputlic" class="form-label">Licence no.*</label>
-                                        <input type="text" class="form-control" id="inputlicence" onChange ={inputSignup} name="lno" value ={sodetails.Lno}/>
+                                    <div className="col-md-6">
+                                        <label htmlFor="inputlic" className="form-label">Licence no.*</label>
+                                        <input type="text" className="form-control" id="inputlicence" onChange ={inputSignup} name="lno" value ={sodetails.Lno}/>
                                     </div>
-                                    <div class="col-12">
-                                        <label for="inputAddress" class="form-label">Address</label>
-                                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" onChange ={inputSignup} name="address" value ={sodetails.Address}/>
+                                    <div className="col-12">
+                                        <label htmlFor="inputAddress" className="form-label">Address</label>
+                                        <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St" onChange ={inputSignup} name="address" value ={sodetails.Address}/>
                                     </div>
-                                    <div class="col-md-6">
-                                        <label for="inputCity" class="form-label">City*</label>
-                                        <input type="text" class="form-control" id="inputCity" onChange ={inputSignup} name="city" value ={sodetails.City}/>
+                                    <div className="col-md-6">
+                                        <label htmlFor="inputCity" className="form-label">City*</label>
+                                        <input type="text" className="form-control" id="inputCity" onChange ={inputSignup} name="city" value ={sodetails.City}/>
                                     </div>
-                                    <div class="col-md-2">
-                                        <label for="inputZip" class="form-label">Pincode*</label>
-                                        <input type="text" class="form-control" id="inputZip" onChange ={inputSignup} name="pincode" value ={sodetails.Pincode}/>
+                                    <div className="col-md-2">
+                                        <label htmlFor="inputZip" className="form-label">Pincode*</label>
+                                        <input type="text" className="form-control" id="inputZip" onChange ={inputSignup} name="pincode" value ={sodetails.Pincode}/>
                                     </div>
-                                    <div class="col-md-4">
-                                        <label for="inputphone" class="form-label">Phone*</label>phone
-                                        <input type="number" class="form-control" id="inputphone" onChange ={inputSignup} name="phone" value ={sodetails.Phone}/>
+                                    <div className="col-md-4">
+                                        <label htmlFor="inputphone" className="form-label">Phone*</label>phone
+                                        <input type="number" className="form-control" id="inputphone" onChange ={inputSignup} name="phone" value ={sodetails.Phone}/>
                                     </div>
-                                    <div class="col-md-6">
-                                        <label for="inputPassword1" class="form-label">Password*</label>
-                                        <input type="password" class="form-control" id="inputPassword1" onChange ={inputSignup} name="pass1" value ={sodetails.Pass1}/>
+                                    <div className="col-md-6">
+                                        <label htmlFor="inputPassword1" className="form-label">Password*</label>
+                                        <input type="password" className="form-control" id="inputPassword1" onChange ={inputSignup} name="pass1" value ={sodetails.Pass1}/>
                                     </div>
-                                    <div class="col-md-6">
-                                        <label for="inputPassword2" class="form-label">Confirm Password*</label>
-                                        <input type="password" class="form-control" id="inputPassword2" onChange ={inputSignup} name="pass2" value ={sodetails.Pass2}/>
+                                    <div className="col-md-6">
+                                        <label htmlFor="inputPassword2" className="form-label">Confirm Password*</label>
+                                        <input type="password" className="form-control" id="inputPassword2" onChange ={inputSignup} name="pass2" value ={sodetails.Pass2}/>
                                     </div>
-                                    <div class="col-12 my-3">
+                                    <div className="col-12 my-3">
                                         <div className="row justify-content-center">
-                                        <button type="submit" class="btn btn-outline-info col-md-4 col-8">Sign Up</button>
+                                        <button type="submit" className="btn btn-outline-info col-md-4 col-8">Sign Up</button>
                                     </div>
                                     </div>
                                 </form>

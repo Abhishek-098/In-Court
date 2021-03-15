@@ -147,35 +147,35 @@ const AddClient = () =>{
                     <div className ="col-md-10 col-12">
                     <form className="row g-3" onSubmit ={AddClient}>
                         <div className="col-md-6">
-                            <label for="inputfname" className="form-label">First Name*</label>
+                            <label htmlFor="inputfname" className="form-label">First Name*</label>
                             <input type="text" className="form-control" id="inputFname" onChange ={sendcDetails} name="fname" value={client.Fname}/>
                         </div>
                         <div className="col-md-6">
-                            <label for="inputLname" className="form-label">Last Name</label>
+                            <label htmlFor="inputLname" className="form-label">Last Name</label>
                             <input type="text" className="form-control" id="inputLname" onChange ={sendcDetails} name="lname" value={client.Lname}/>
                         </div>
                         <div className="col-md-6">
-                            <label for="inputEmail4" className="form-label">Phone*</label>
+                            <label htmlFor="inputEmail4" className="form-label">Phone*</label>
                             <input type="number" className="form-control" id="inputPhone" onChange ={sendcDetails} name="phone" value={client.Phone}/>
                         </div>
                         <div className="col-md-6">
-                            <label for="inputAdhar" className="form-label">Adhar number</label>
+                            <label htmlFor="inputAdhar" className="form-label">Adhar number</label>
                             <input type="text" className="form-control" id="inputAdhar" onChange ={sendcDetails} name="adhar" value={client.Adhar}/>
                         </div>
                         <div className="col-12">
-                            <label for="inputAddress" className="form-label">Address</label>
+                            <label htmlFor="inputAddress" className="form-label">Address</label>
                             <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St" onChange ={sendcDetails} name="address" value={client.Address}/>
                         </div>
                         <div className="col-md-6">
-                            <label for="inputCity" className="form-label">City*</label>
+                            <label htmlFor="inputCity" className="form-label">City*</label>
                             <input type="text" className="form-control" id="inputCity" onChange ={sendcDetails} name="city" value={client.City}/>
                         </div>
                         <div className="col-md-2">
-                            <label for="inputZip" className="form-label">PinCode</label>
+                            <label htmlFor="inputZip" className="form-label">PinCode</label>
                             <input type="text" className="form-control" id="inputZip" onChange ={sendcDetails} name="pincode" value={client.Pincode}/>
                         </div>
                         <div className="col-md-12">
-                            <label for="inputprob" className="form-label">Problem Statement*</label>
+                            <label htmlFor="inputprob" className="form-label">Problem Statement*</label>
                             <textarea type="text" className="form-control" id="inputProb" onChange ={sendcDetails} name="problem" value={client.PStatement}/>
                         </div>
                         <div className="col-12 ">

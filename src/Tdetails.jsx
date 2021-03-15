@@ -8,7 +8,7 @@ const Tdetails = () =>{
                </div>
                <div className ="row justify-content-center">
                    <div className = "col-12">
-                        <table class="table table-striped">
+                        <table className="table table-striped">
                         <thead className="table-dark">
                             <tr>
                                 <td>Sno.</td>
