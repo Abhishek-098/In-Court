@@ -1,0 +1,23 @@
+
+ .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 22px;
+    border: 1px solid #cfcece;
+  }
+  .close:hover{
+    background: red;
+    color: white;
+  }
+  .infoCard{
+    -webkit-box-shadow: 0px 0px 300px 112px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 300px 112px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 300px 112px rgba(0,0,0,0.75);
+  }

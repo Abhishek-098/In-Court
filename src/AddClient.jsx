@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import './CSS/add.css';
+import { Spring } from 'react-spring/renderprops';
+
+
+// COMPONENT TO ADD CLIENTS
 
 const AddClient = () =>{
     const [client,inputClient] = useState({
@@ -12,6 +16,8 @@ const AddClient = () =>{
         Pincode:"",
         PStatement:"",
     });
+
+    // THIS IS AN ONCHANGE FUNCTION WHICH IS BEING CALLED WHEN THERE OCCURS ANY CHNAGE IN INPUTS
     const sendcDetails =(values) =>{
         const data = values.target.value;
         const type = values.target.name;
@@ -123,12 +129,13 @@ const AddClient = () =>{
     });
 } 
         
+    // THIS IS ONSUBMIT FUNCTION CALLED WHILE SUBMITTING THE FORM
 
     const AddClient =(e) =>{
         e.preventDefault();
         if (client.Fname !=="" && client.Phone!=="" && client.City!=="" && client.PStatement !==""){
 
-            // Get clients data here 
+            // HERE BACKEND NEEDS TO SAVE DATA IN DATABASE
 
             alert( `Name of Client is ${client.Fname} and problem is ${client.PStatement}.  `)
         }
@@ -138,6 +145,9 @@ const AddClient = () =>{
         
 
     }
+
+    // THIS IS FORM
+    
     return(<>
             <div className ="container mt-5">
                 <div className ="row mt-5 justify-content-center">
@@ -179,7 +189,18 @@ const AddClient = () =>{
                             <textarea type="text" className="form-control" id="inputProb" onChange ={sendcDetails} name="problem" value={client.PStatement}/>
                         </div>
                         <div className="col-12 ">
-                            <button type="submit" className="btn btn-info my-3">Add and Send Notification</button>
+                            <Spring
+                                from = {{opacity:0}}
+                                to = {{opacity:1}}
+                                config = {{delay:500,duration:1000}}
+                                >
+                                {props=>(
+                                    <div style = {props}>
+                                        <button type="submit" className="btn btn-info my-3">Add and Send Notification</button>
+                                    </div>
+                                )}
+                            </Spring>
+                            
                         </div>
                     </form>
                     </div>

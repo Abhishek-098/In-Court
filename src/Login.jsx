@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 // import { NavLink } from 'react-router-dom';
 
 import './CSS/login.css';
+import { Spring } from 'react-spring/renderprops';
 
 const Login = () =>{
 
@@ -266,28 +267,38 @@ const Login = () =>{
             <section>
                 <div className = 'container'>
                     <div className ='row'>
-                        <div className = "col-md -5 box">
-                            <div className = "row mt-5 justify-content-center">
-                                <h2 className ="my-2 col-md-5">Already a User</h2>
-                            </div>
-                            <div className ="row mt-4 justify-content-center">
-                            <form className ="mt-3 col-md-8" onSubmit ={signinSubmit}>
-                                <div className="mb-3">
-                                    <label htmlFor="exampleInputEmail1" className="form-label login">Email address</label>
-                                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" onChange ={inputSignin} name ="vmail" value ={sidetails.email}/>
-                                    <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
-                                </div>
-                                <div className="mb-3">
-                                    <label htmlFor="exampleInputPassword1" className="form-label login">Password</label>
-                                    <input type="password" className="form-control" id="exampleInputPassword1" onChange ={inputSignin} name ="pass" value ={sidetails.pass}/>
-                                </div>
-                                <div className ='row justify-content-center'>
-                                <button type="submit" className="btn btn-outline-info col-md-3 col-8">LogIn</button>
-                                </div>
-                            </form>
-                            </div>
+                        <Spring 
+                            from = {{opacity:0, marginLeft:-500, marginRight:500}}
+                             to = {{opacity:1,marginLeft:0 ,marginRight:0}}
+                             config ={{delay:0,duration:800}}   >
+                            {props =>(
+                                        <div className = "col-md -5 box" style={props}>
+                                    <div className = "row mt-5 justify-content-center">
+                                        <h2 className ="my-2 col-md-5">Already a User</h2>
+                                    </div>
+                                    <div className ="row mt-4 justify-content-center">
+                                    <form className ="mt-3 col-md-8" onSubmit ={signinSubmit}>
+                                        <div className="mb-3">
+                                            <label htmlFor="exampleInputEmail1" className="form-label login">Email address</label>
+                                            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" onChange ={inputSignin} name ="vmail" value ={sidetails.email}/>
+                                            <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+                                        </div>
+                                        <div className="mb-3">
+                                            <label htmlFor="exampleInputPassword1" className="form-label login">Password</label>
+                                            <input type="password" className="form-control" id="exampleInputPassword1" onChange ={inputSignin} name ="pass" value ={sidetails.pass}/>
+                                        </div>
+                                        <div className ='row justify-content-center'>
+                                        <button type="submit" className="btn btn-outline-info col-md-3 col-8">LogIn</button>
+                                        </div>
+                                    </form>
+                                    </div>
 
-                        </div>
+                                </div>
+
+                
+                            )}
+                        </Spring>
+                        
                         <div className="col-md-1"></div>
                         <div className = "col-md-6 main mt-5">
                                 <div className = "row my-3 justify-content-center">
