@@ -307,7 +307,7 @@ const Login = () =>{
                                 <form className="row g-3" onSubmit ={signupSubmit}>
                                     <div className="col-md-6">
                                         <label htmlFor="inputfname" className="form-label">First Name*</label>
-                                        <input type="text" className="form-control" id="inputfname" onChange ={inputSignup} name="fname" value ={sodetails.Fname}/>
+                                        <input type="text" className="form-control" id="inputfname" onChange ={inputSignup} name="fname" value ={sodetails.Fname} required/>
                                     </div>
                                     <div className="col-md-6">
                                         <label htmlFor="inputLname" className="form-label">Last Name</label>
@@ -315,11 +315,11 @@ const Login = () =>{
                                     </div>
                                     <div className="col-md-6">
                                         <label htmlFor="inputEmail4" className="form-label">Email*</label>
-                                        <input type="email" className="form-control" id="inputEmail4" onChange ={inputSignup} name="email" value ={sodetails.Email}/>
+                                        <input type="email" className="form-control" id="inputEmail4" onChange ={inputSignup} name="email" value ={sodetails.Email} required/>
                                     </div>
                                     <div className="col-md-6">
                                         <label htmlFor="inputlic" className="form-label">Licence no.*</label>
-                                        <input type="text" className="form-control" id="inputlicence" onChange ={inputSignup} name="lno" value ={sodetails.Lno}/>
+                                        <input type="text" className="form-control" id="inputlicence" onChange ={inputSignup} name="lno" value ={sodetails.Lno} required/>
                                     </div>
                                     <div className="col-12">
                                         <label htmlFor="inputAddress" className="form-label">Address</label>
@@ -327,23 +327,23 @@ const Login = () =>{
                                     </div>
                                     <div className="col-md-6">
                                         <label htmlFor="inputCity" className="form-label">City*</label>
-                                        <input type="text" className="form-control" id="inputCity" onChange ={inputSignup} name="city" value ={sodetails.City}/>
+                                        <input type="text" className="form-control" id="inputCity" onChange ={inputSignup} name="city" value ={sodetails.City} required/>
                                     </div>
                                     <div className="col-md-2">
                                         <label htmlFor="inputZip" className="form-label">Pincode*</label>
-                                        <input type="text" className="form-control" id="inputZip" onChange ={inputSignup} name="pincode" value ={sodetails.Pincode}/>
+                                        <input type="text" className="form-control" id="inputZip" onChange ={inputSignup} name="pincode" value ={sodetails.Pincode} required/>
                                     </div>
                                     <div className="col-md-4">
                                         <label htmlFor="inputphone" className="form-label">Phone*</label>phone
-                                        <input type="number" className="form-control" id="inputphone" onChange ={inputSignup} name="phone" value ={sodetails.Phone}/>
+                                        <input type="number" className="form-control" id="inputphone" onChange ={inputSignup} name="phone" value ={sodetails.Phone} required/>
                                     </div>
                                     <div className="col-md-6">
                                         <label htmlFor="inputPassword1" className="form-label">Password*</label>
-                                        <input type="password" className="form-control" id="inputPassword1" onChange ={inputSignup} name="pass1" value ={sodetails.Pass1}/>
+                                        <input type="password" className="form-control" id="inputPassword1" onChange ={inputSignup} name="pass1" value ={sodetails.Pass1} required/>
                                     </div>
                                     <div className="col-md-6">
                                         <label htmlFor="inputPassword2" className="form-label">Confirm Password*</label>
-                                        <input type="password" className="form-control" id="inputPassword2" onChange ={inputSignup} name="pass2" value ={sodetails.Pass2}/>
+                                        <input type="password" className="form-control" id="inputPassword2" onChange ={inputSignup} name="pass2" value ={sodetails.Pass2} required/>
                                     </div>
                                     <div className="col-12 my-3">
                                         <div className="row justify-content-center">

@@ -19,14 +19,15 @@ const sample =[{Name:"Abhishek",Status:"Pending",hrdates:['20-12-2020 ','10-01-2
 const nsamp = sample.map((value,index)=>{
     return<><ClientsTable 
             key ={index}
-            num = {index}
-            name = {value.Name}
+            num = {index+1}
+            Fname = {value.Name}
+            Lname ={value.Lname}
             status = {value.Status} 
-            address = {value.address}
-            city = {value.city}
-            ps ={value.ps}
-            phone ={value.phone}
-            adhar ={value.adhar}
+            Address = {value.address}
+            City = {value.city}
+            PStatement ={value.ps}
+            Phone ={value.phone}
+            Adhar ={value.adhar}
             hrdates ={value.hrdates}
 
     /></>
@@ -34,6 +35,7 @@ const nsamp = sample.map((value,index)=>{
 
 
 const Home = () =>{
+    
     return(<>
         <section>
             <div className = "container-fluid">
@@ -53,7 +55,7 @@ const Home = () =>{
                                     <div className="hero-text">
                                     <div className ="content">
                                         <h1>WELCOME</h1>
-                                        <h3>This is In-Law</h3>
+                                        <h3>This is In-Court</h3>
                                         <br/>
                                         <NavLink to ='/add-client' className ="btn btn-info " >Add Clients</NavLink>
                                     </div>
@@ -64,6 +66,7 @@ const Home = () =>{
                      )}
                         </Spring>
                     </div>
+                    <div className ="shade"></div>
                 </div>
                 
             </div>
@@ -79,7 +82,7 @@ const Home = () =>{
                             <Spring
                                 from ={{ opacity:0, marginLeft:-500, marginRight:500}}
                                 to = {{ opacity:1,marginLeft:0,marginRight:0}}
-                                config = {{delay:1200,duration:1000}} 
+                                config = {{delay:0,duration:1000}} 
                             >
 
                                 {props=>(

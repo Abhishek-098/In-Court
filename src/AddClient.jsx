@@ -135,7 +135,7 @@ const AddClient = () =>{
         e.preventDefault();
         if (client.Fname !=="" && client.Phone!=="" && client.City!=="" && client.PStatement !==""){
 
-            // HERE BACKEND NEEDS TO SAVE DATA IN DATABASE
+            // HERE BACKEND NEEDS TO SAVE DATA IN DATABASE (remove this alert down below and set backend)
 
             alert( `Name of Client is ${client.Fname} and problem is ${client.PStatement}.  `)
         }
@@ -158,7 +158,7 @@ const AddClient = () =>{
                     <form className="row g-3" onSubmit ={AddClient}>
                         <div className="col-md-6">
                             <label htmlFor="inputfname" className="form-label">First Name*</label>
-                            <input type="text" className="form-control" id="inputFname" onChange ={sendcDetails} name="fname" value={client.Fname}/>
+                            <input type="text" className="form-control" id="inputFname" onChange ={sendcDetails} name="fname" value={client.Fname} required/>
                         </div>
                         <div className="col-md-6">
                             <label htmlFor="inputLname" className="form-label">Last Name</label>
@@ -166,7 +166,7 @@ const AddClient = () =>{
                         </div>
                         <div className="col-md-6">
                             <label htmlFor="inputEmail4" className="form-label">Phone*</label>
-                            <input type="number" className="form-control" id="inputPhone" onChange ={sendcDetails} name="phone" value={client.Phone}/>
+                            <input type="number" className="form-control" id="inputPhone" onChange ={sendcDetails} name="phone" value={client.Phone} required/>
                         </div>
                         <div className="col-md-6">
                             <label htmlFor="inputAdhar" className="form-label">Adhar number</label>
@@ -178,15 +178,15 @@ const AddClient = () =>{
                         </div>
                         <div className="col-md-6">
                             <label htmlFor="inputCity" className="form-label">City*</label>
-                            <input type="text" className="form-control" id="inputCity" onChange ={sendcDetails} name="city" value={client.City}/>
+                            <input type="text" className="form-control" id="inputCity" onChange ={sendcDetails} name="city" value={client.City} required/>
                         </div>
                         <div className="col-md-2">
-                            <label htmlFor="inputZip" className="form-label">PinCode</label>
-                            <input type="text" className="form-control" id="inputZip" onChange ={sendcDetails} name="pincode" value={client.Pincode}/>
+                            <label htmlFor="inputZip" className="form-label">PinCode*</label>
+                            <input type="text" className="form-control" id="inputZip" onChange ={sendcDetails} name="pincode" value={client.Pincode} required/>
                         </div>
                         <div className="col-md-12">
                             <label htmlFor="inputprob" className="form-label">Problem Statement*</label>
-                            <textarea type="text" className="form-control" id="inputProb" onChange ={sendcDetails} name="problem" value={client.PStatement}/>
+                            <textarea type="text" className="form-control" id="inputProb" onChange ={sendcDetails} name="problem" value={client.PStatement} required/>
                         </div>
                         <div className="col-12 ">
                             <Spring
