@@ -17,6 +17,8 @@ import { Spring } from 'react-spring/renderprops';
         Pincode : props.Pincode,
         Ps : props.PStatement
     });
+   
+    
     const sendcDetails =(values) =>{
         const data = values.target.value;
         const type = values.target.name;
@@ -131,7 +133,8 @@ import { Spring } from 'react-spring/renderprops';
     const editData =(e)=>{
         e.preventDefault();
         setEdit(false);
-        alert(cData.Fname);
+        // All the data is here after edit button
+        alert("Data Updated");
         }
 
     
@@ -148,12 +151,13 @@ import { Spring } from 'react-spring/renderprops';
                       <div className="card-body">
                         {!edit ? 
                         <>
-                         <h5 className="card-title">{`${props.Fname} ${props.Lname}`}</h5>
-                         <h6 className="card-subtitle mb-2 text-muted">{`${props.Address}, ${props.City}`}</h6>
-                         <p className="card-text">{props.PStatement}</p>
-                         <h6 className="card-subtitle mb-2">{`Phone: ${props.Phone}`}</h6>
-                         <h6 className="card-subtitle mb-2">{`Adhar no.: ${props.Adhar}`}</h6>
-                         <h6 className="card-subtitle mb-2">{`Dates: ${props.hrdates}`}</h6> 
+                         <h5 className="card-title">{`${props.Fname ? props.Fname : "Unknown"} ${props.Lname ? props.Lname :" "}`}</h5>
+                         <h6 className="card-subtitle mb-2 text-muted">{`${props.Address ? props.Address : " "}, ${props.City ? props.City : "Not provided"}`}</h6>
+                         <p className="card-text">{props.PStatement ? props.PStatement : "Not Provided"}</p>
+                         <h6 className="card-subtitle mb-2">{`Phone: ${props.Phone ? props.Phone : "Not Provided"}`}</h6>
+                         <h6 className="card-subtitle mb-2">{`Adhar no.: ${props.Adhar ? props.Adhar : "Not provided"}`}</h6>
+                         {/* <h6 className="card-subtitle mb-2">{`Dates: ${props.hrdates}`}</h6>      */}
+                         
                          <button className="btn btn-info me-3" style ={{width:"100px"}} onClick={()=>setEdit(true)}>Edit</button>
                          <button className="btn btn-danger" style ={{width:"100px"}}>Delete</button>
                          </>

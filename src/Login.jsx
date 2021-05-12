@@ -3,8 +3,11 @@ import React, { useState } from 'react';
 
 import './CSS/login.css';
 import { Spring } from 'react-spring/renderprops';
+import { useHistory } from 'react-router';
 
 const Login = () =>{
+    let history = useHistory();
+
 
     //  TO GET DETAILS WHILE INPUT: 
 
@@ -36,8 +39,8 @@ const Login = () =>{
             alert("Please input valid values");
         }
         else{
+            history.push('/');
 
-            alert( `My email is ${sidetails.email} and password is ${sidetails.pass}`);
     }
 }
 
@@ -249,9 +252,24 @@ const Login = () =>{
             if (sodetails.Pass1 === sodetails.Pass2){
 
             // Display only remove while creating backend 
+                alert("SignUp Successfull, Please Login to Continue");
+                inputSO(()=>{
+                    return{
+                        Fname : "",
+                        Lname : "",
+                        Email : "",
+                        Lno : "",
+                        Address : "",
+                        City : "",
+                        Pincode : "",
+                        Phone : "",
+                        Pass1 : "",
+                        Pass2 : "",
+                    }
+                })
 
-                alert( `My name is ${sodetails.Fname} ${sodetails.Lname}. My email id is ${sodetails.Email}, Lic no is ${sodetails.Lno}. Address is ${sodetails.Address} 
-        ${sodetails.City} ${sodetails.Pincode}. My phone number is ${sodetails.Phone} and these are my passwords ${sodetails.Pass1} and ${sodetails.Pass2}.`)
+        //         alert( `My name is ${sodetails.Fname} ${sodetails.Lname}. My email id is ${sodetails.Email}, Lic no is ${sodetails.Lno}. Address is ${sodetails.Address} 
+        // ${sodetails.City} ${sodetails.Pincode}. My phone number is ${sodetails.Phone} and these are my passwords ${sodetails.Pass1} and ${sodetails.Pass2}.`)
         }
         else{
             alert("Passwords don't  match !");

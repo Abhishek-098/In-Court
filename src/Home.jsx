@@ -7,10 +7,10 @@ import './CSS/home.css';
 
 // THIS IS JUST A SAMPLE ALL BACKEND NEED TO DO IS TO FETCH DATA AND STORE IT IN 'sample' VARIABLE AND REMOVE THIS AFTER THE FETCH.
 
-const sample =[{Name:"Abhishek",Status:"Pending",hrdates:['20-12-2020 ','10-01-2021','20-12-2020 ','10-01-2021','20-12-2020 ','10-01-2021','20-12-2020 ','10-01-2021','20-12-2020 ','10-01-2021','20-12-2020 ','10-01-2021','20-12-2020 ','10-01-2021'],address:"civil lines near tirwa kothi road fetehgarh",city:"Farrukhabad", phone:9140716702, adhar:12345678901234 , ps:"Some quick example text to build on the card title and make up the bulk of the card's content. this is to notify that we good ones and never tried harming somebody   of the card's content. this is to notify that we good ones and never tried harming somebody !!! of the card's content. this is to notify that we good ones and never tried harming somebody !!! of the card's content. this is to notify that we good ones and never tried harming somebody !!!vv"},
-               {Name:"Ayush",Status:"Complete" , address:"civil lines near tirwa kothi road fetehgarh",city:"Farrukhabad", phone:9140716702, adhar:12345678901234 , ps:"Some quick example text to build on the card title and make up the bulk of the card's content. this is to notify that we good ones and never tried harming somebody   of the card's content. this is to notify that we good ones and never tried harming somebody !!! of the card's content. this is to notify that we good ones and never tried harming somebody !!! of the card's content. this is to notify that we good ones and never tried harming somebody !!!vv"},
-               {Name:"Harshit",Status:"Pending" , address:"civil lines near tirwa kothi road fetehgarh",city:"Farrukhabad", phone:9140716702, adhar:12345678901234 , ps:"Some quick example text to build on the card title and make up the bulk of the card's content. this is to notify that we good ones and never tried harming somebody   of the card's content. this is to notify that we good ones and never tried harming somebody !!! of the card's content. this is to notify that we good ones and never tried harming somebody !!! of the card's content. this is to notify that we good ones and never tried harming somebody !!!vv"},
-               {Name:"Chauhan",Status:"Done" }];
+const sample =[{Lname:"Yadav", FName:"Sameer",Status:"Pending",hrdates:[{date:"12-12-1999",result:"postponed"},{date:"12-12-1999",result:"postponed"},{date:"12-12-1999",result:"postponed"}],address:"civil lines near tirwa kothi road fetehgarh",city:"Farrukhabad", phone:9140716702, adhar:12345678901234 , ps:"Some quick example text to build on the card title and make up the bulk of the card's content. this is to notify that we good ones and never tried harming somebody   of the card's content. this is to notify that we good ones and never tried harming somebody !!! of the card's content. this is to notify that we good ones and never tried harming somebody !!! of the card's content. this is to notify that we good ones and never tried harming somebody !!!vv"},
+               {Lname:"", FName:"Ayush",Status:"Done" , address:"",city:"Farrukhabad", phone:9140716702, adhar:12345678901234 , ps:"Some quick example text to build on the card title and make up the bulk of the card's content. this is to notify that we good ones and never tried harming somebody   of the card's content. this is to notify that we good ones and never tried harming somebody !!! of the card's content. this is to notify that we good ones and never tried harming somebody !!! of the card's content. this is to notify that we good ones and never tried harming somebody !!!vv"},
+               {Lname:"Pratap", FName:"Harshit",Status:"Pending" , address:"civil lines near tirwa kothi road fetehgarh",city:"Farrukhabad", phone:9140716702, adhar:12345678901234 , ps:"Some quick example text to build on the card title and make up the bulk of the card's content. this is to notify that we good ones and never tried harming somebody   of the card's content. this is to notify that we good ones and never tried harming somebody !!! of the card's content. this is to notify that we good ones and never tried harming somebody !!! of the card's content. this is to notify that we good ones and never tried harming somebody !!!vv"},
+               {Lname:"singh", FName:"R.k",Status:"Done" },{FName:"Abhsihek", LName:"Chauhan",Status:"pending",address:"civil lines near tirwa kothi road fetehgarh",city:"Farrukhabad", phone:9140716702, adhar:12345678901234 , ps:"bike crash"}];
 
 
 
@@ -20,7 +20,7 @@ const nsamp = sample.map((value,index)=>{
     return<><ClientsTable 
             key ={index}
             num = {index+1}
-            Fname = {value.Name}
+            Fname = {value.FName}
             Lname ={value.Lname}
             status = {value.Status} 
             Address = {value.address}
@@ -76,6 +76,7 @@ const Home = () =>{
                 {/* THIS IS WHERE ALL THE CLIENTS ARE BEING DISPLAYED */}
 
                     <h2 className ="my-4">Your Clients</h2>
+                    <h2 className ="my-4" hidden>Login to view your clients details</h2>
                 </div>
                 <div className = 'row my-4 justify-content-center'>
                         <div className = "col-md-10 col-12">

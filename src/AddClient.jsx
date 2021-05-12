@@ -137,7 +137,7 @@ const AddClient = () =>{
 
             // HERE BACKEND NEEDS TO SAVE DATA IN DATABASE (remove this alert down below and set backend)
 
-            alert( `Name of Client is ${client.Fname} and problem is ${client.PStatement}.  `)
+            alert( `Client named ${client.Fname} is added.`)
         }
         else{
             alert("Please enter required Fields !");
@@ -183,6 +183,10 @@ const AddClient = () =>{
                         <div className="col-md-2">
                             <label htmlFor="inputZip" className="form-label">PinCode*</label>
                             <input type="text" className="form-control" id="inputZip" onChange ={sendcDetails} name="pincode" value={client.Pincode} required/>
+                        </div>
+                        <div className="col-md-2">
+                            <label htmlFor="Date" className="form-label">Date of hearing*</label>
+                            <input type="date" className="form-control" id="inputZip" required/>
                         </div>
                         <div className="col-md-12">
                             <label htmlFor="inputprob" className="form-label">Problem Statement*</label>
