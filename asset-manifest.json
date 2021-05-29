@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/In-Court/static/css/main.bc9faaa8.chunk.css",
+    "main.js": "/In-Court/static/js/main.0a59822a.chunk.js",
+    "main.js.map": "/In-Court/static/js/main.0a59822a.chunk.js.map",
+    "runtime-main.js": "/In-Court/static/js/runtime-main.58faf723.js",
+    "runtime-main.js.map": "/In-Court/static/js/runtime-main.58faf723.js.map",
+    "static/css/2.54370922.chunk.css": "/In-Court/static/css/2.54370922.chunk.css",
+    "static/js/2.df5ee34e.chunk.js": "/In-Court/static/js/2.df5ee34e.chunk.js",
+    "static/js/2.df5ee34e.chunk.js.map": "/In-Court/static/js/2.df5ee34e.chunk.js.map",
+    "index.html": "/In-Court/index.html",
+    "static/css/2.54370922.chunk.css.map": "/In-Court/static/css/2.54370922.chunk.css.map",
+    "static/css/main.bc9faaa8.chunk.css.map": "/In-Court/static/css/main.bc9faaa8.chunk.css.map",
+    "static/js/2.df5ee34e.chunk.js.LICENSE.txt": "/In-Court/static/js/2.df5ee34e.chunk.js.LICENSE.txt",
+    "static/media/home.css": "/In-Court/static/media/court.7a8a7667.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.58faf723.js",
+    "static/css/2.54370922.chunk.css",
+    "static/js/2.df5ee34e.chunk.js",
+    "static/css/main.bc9faaa8.chunk.css",
+    "static/js/main.0a59822a.chunk.js"
+  ]
+}
